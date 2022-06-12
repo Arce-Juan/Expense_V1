@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infraestructure.Persistence.Configurations
 {
-    public class ExpenseTypeConfig : IEntityTypeConfiguration<ExpenseType>
+    public class ExpenseTypeConfig : IEntityTypeConfiguration<Concept>
     {
-        public void Configure(EntityTypeBuilder<ExpenseType> builder)
+        public void Configure(EntityTypeBuilder<Concept> builder)
         {
-            builder.ToTable("ExpenseTypes");
+            builder.ToTable("Concepts");
 
             builder.HasKey(x => x.Id);
 

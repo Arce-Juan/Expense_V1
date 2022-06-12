@@ -11,8 +11,8 @@ namespace Infraestructure.Persistence.Contents
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
-        public DbSet<ExpenseType> ExpenseTypes { get; set; }
-        public DbSet<Expense> Expenses { get; set; }
+        public DbSet<Concept> Concept { get; set; }
+        public DbSet<Transaction> Transaction { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

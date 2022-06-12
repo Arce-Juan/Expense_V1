@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infraestructure.Persistence.Configurations
 {
-    public class ExpenseConfig : IEntityTypeConfiguration<Expense>
+    public class ExpenseConfig : IEntityTypeConfiguration<Transaction>
     {
-        public void Configure(EntityTypeBuilder<Expense> builder)
+        public void Configure(EntityTypeBuilder<Transaction> builder)
         {
-            builder.ToTable("Expenses");
+            builder.ToTable("Transactions");
 
             builder.HasKey(x => x.Id);
 
@@ -16,6 +16,12 @@ namespace Infraestructure.Persistence.Configurations
                 .IsRequired();
 
             builder.Property(p => p.Date)
+                .IsRequired();
+
+            builder.Property(p => p.Concept)
+                .IsRequired();
+
+            builder.Property(p => p.TransactionType)
                 .IsRequired();
 
             builder.Property(p => p.Month)

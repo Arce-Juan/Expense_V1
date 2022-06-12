@@ -2,10 +2,12 @@
 {
     public enum Category
     {
-        COCINA,
-        CREDITO,
+        CREDITOS,
+        ESTETICA,
         ENTRETENIMIENTO,
         IMPUESTO,
-        SALUD
+        SALUD,
+        OCIO,
+        VIVERES
     }
 }
