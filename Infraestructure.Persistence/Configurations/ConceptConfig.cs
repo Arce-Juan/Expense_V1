@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infraestructure.Persistence.Configurations
 {
-    public class ExpenseTypeConfig : IEntityTypeConfiguration<Concept>
+    public class ConceptConfig : IEntityTypeConfiguration<Concept>
     {
         public void Configure(EntityTypeBuilder<Concept> builder)
         {

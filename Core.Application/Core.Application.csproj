@@ -17,4 +17,18 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Concepts\Commands\DeleteConceptCommand\" />
+    <Folder Include="Features\Concepts\Commands\UpdateConceptCommand\" />
+    <Folder Include="Features\Concepts\Queries\GetAllConcept\" />
+    <Folder Include="Features\Concepts\Queries\GetConceptById\" />
+    <Folder Include="Features\Transactions\Commands\CreateTransactionCommand\" />
+    <Folder Include="Features\Transactions\Commands\DeleteTransactionCommand\" />
+    <Folder Include="Features\Transactions\Commands\UpdateTransactionCommand\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
